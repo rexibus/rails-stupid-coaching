@@ -1,0 +1,22 @@
+<h1>Stupid Coaching</h1>
+<!-- <p>Find me in app/views/pages/answer.html.erb</p> -->
+
+<div class=interaction>
+  <p><%= @answer %></p>
+  <p> -You </p>
+</div>
+<div class=interaction>
+  <% if @answer == "I am going to work" %>
+    <p><%= "Great!" %></p>
+    <% elsif @answer.last == "?" %>
+    <p><%= "Silly question, get dressed and go to work!" %></p>
+    <% else %>
+    <p><%= "I don't care, get dressed and go to work!" %></p>
+  <% end %>
+  <p>-Your coach</p>
+</div>
+
+<div class="linkk">
+<%= link_to "Ask a new question", ask_path %>
+</div>
+
